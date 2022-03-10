@@ -1,0 +1,35 @@
+{% extends 'squadbase.html' %}
+{% block content %}
+{% load static %}
+<section class="up">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 offset-1">
+
+            </div>
+            <div class="col-sm-6 offset-1" data-aos="fade-up">
+                <h1 class="text-center alert alert-info">Update {{id}}</h1>
+                <form action="" method="POSt">
+                    {% csrf_token %}
+                    {{form.as_p}} <br>
+                    <input type="submit" class="btn btn-info" value="Update  ">
+                    <a href="{% url 'addshow'  %}" class="btn btn-success">Back to squad</a>
+                </form>
+            </div>
+            <div class="col-sm-3 offset-1">
+
+            </div>
+        </div>
+    </div> 
+</section>
+<style>
+    .up{
+        padding: 100px;
+       
+    }
+    .btn{
+        padding: 10px 20px;
+        align-items: center;
+    }
+</style>
+{%endblock%}

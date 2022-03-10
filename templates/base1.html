@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}  
+
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <title>IPL Details</title>
+</head>
+
+<body>
+    <section class="head">
+        <div class="navbar">
+            <a href="#home"><i class="fa fa-home" style="font-size:24px"></i> HOME</a>
+            <a href="#news"><i class="fa fa-diamond" style="font-size:24px"></i> AUCTION</a>
+            <a href=""><i class="fa fa-group" style="font-size:24px"></i> TEAM</a>
+            <a href=""><i class="fa fa-money" style="font-size:24px"></i> MATCH</a>
+            <div class="dropdown">
+                <a href="" class="a"><i class="fa fa-angle-down" style="font-size:24px"></i> MORE</a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-folder-open-o" style="font-size:24px"></i> GALLERY</a>
+                    <a href="#"><i class="fa fa-user-o" style="font-size:24px"></i> ABOUTUS</a>
+                    <a href="#"><i class="fa fa-phone" style="font-size:24px"></i> CONTACT</a>
+                </div>
+            </div>
+            <a href="" style="float: right;"><i class="fa fa-unlock-alt" style="font-size:24px"></i> LOGIN</a>
+
+        </div>        
+    </section>
+{% block content %}
+{% endblock %}
+<h1>vkhgyug</h1>
+    
+</body>
+
+</html>

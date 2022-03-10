@@ -1,0 +1,67 @@
+{% extends 'squadbase.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<section class="start">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3" data-aos="fade-right">
+                <h1 class="text-center alert alert-info">Make Your Own Team</h1>
+                <form action="" method="POST">
+                     {% csrf_token %}
+                    {{form.as_p}} <br>
+                    <input type="submit" class="btn btn-success" value="Add " style="margin-left: 0px; padding: 10px 30px;" >
+                </form>
+            </div>
+
+           
+            <div class="col-sm-9 offset" data-aos="fade-left">
+                <h1 class="text-center alert alert-info"> Your  Team</h1>
+                {% if result %}
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Player Name</th>
+                        <th scope="col">Team Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Playing XI</th>
+                        <th scope="col">Player Role</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {% for st in result %}
+                      <tr>
+                        <th scope="row">{{st.id}}</th>
+                        <td>{{st.name}}</td>
+                        <td>{{st.team}}</td>
+                        <td>{{st.price}}</td>
+                        <td>{{st.play}}</td>
+                        <td>{{st.role}}</td>
+                        <td>
+                            <a href="{% url 'updatedata' st.id %} " class="btn btn-warning btn-sm">Edit</a>
+                            <form action=" {% url 'deletedata' st.id %} " method="post"  style="display: inline;">{% csrf_token %}
+                                <input type="submit" class="btn btn-danger" value="Delete">
+                            </form>
+                        </td>
+                      </tr>
+                     {% endfor %}
+                    </tbody>
+                  </table>
+                {% else %}
+                <h1 class="text-center alert alert-info"> No data</h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <style>
+      
+    </style>
+</section>
+{%endblock %}

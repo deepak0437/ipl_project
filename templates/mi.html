@@ -1,0 +1,1018 @@
+{% extends 'basemi.html' %}
+{% block content %}
+{% load static %}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+<div class="main">
+    <div class="container"><br><br>
+        <h1 data-aos="fade-right"
+            style="text-align: center;font-size: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            Top Batsman</h1>
+    </div>
+    <div class="body" data-aos="fade-up">
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-text">
+                <span class="date">MI</span>
+                <h2>Ishan Kishan</h2>
+                <p>Average : <span><b>118.98</b></span></p>
+                <p>Not Out : <span><b>27 +</b></span></p>
+                <p>Play At : <span><b>No. 6</b></span></p>
+            </div>
+            <div class="card-stats">
+                <div class="stat">
+                    <div class="value">236</div>
+                    <div class="type">Match</div>
+                </div>
+                <div class="stat border">
+                    <div class="value">4985</div>
+                    <div class="type">Runs</div>
+                </div>
+                <div class="stat">
+                    <div class="value">27</div>
+                    <div class="type">50 +</div>
+                </div>
+            </div>
+        </div>
+        <div class="card cd">
+            <div class="card-image card2"></div>
+            <div class="card-text card2">
+                <span class="date">MI</span>
+                <h2>Rohit Sharma</h2>
+                <p>Average : <span><b>135.98</b></span></p>
+                <p>Not Out : <span><b>37 +</b></span></p>
+                <p>Play At : <span><b>No. 3</b></span></p>
+            </div>
+            <div class="card-stats card2">
+                <div class="stat">
+                    <div class="value">203</div>
+                    <div class="type">Match</div>
+                </div>
+                <div class="stat border">
+                    <div class="value">5528</div>
+                    <div class="type">Runs</div>
+                </div>
+                <div class="stat">
+                    <div class="value">39</div>
+                    <div class="type">50 +</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image card3"></div>
+            <div class="card-text card3">
+                <span class="date">MI</span>
+                <h2>Hardik Pandya </h2>
+                <p>Average : <span><b>110.98</b></span></p>
+                <p>Not Out : <span><b>21 +</b></span></p>
+                <p>Play At : <span><b>No. 2</b></span></p>
+            </div>
+            <div class="card-stats card3">
+                <div class="stat">
+                    <div class="value">159</div>
+                    <div class="type">Match</div>
+                </div>
+                <div class="stat border">
+                    <div class="value">3589</div>
+                    <div class="type">Runs</div>
+                </div>
+                <div class="stat">
+                    <div class="value">20</div>
+                    <div class="type">50 + </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="main1">
+        <div class="container">
+            <h1 data-aos="fade-left"
+                style="color: white; text-align: center;font-size: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Top Bowlers</h1><br><br>
+        </div>
+        <div class="mtwo" data-aos="fade-up">
+            <div class="container cr">
+                <div class="card1">
+                    <div class="box">
+                        <div class="content">
+
+                            <div class="card-image1"> <img src="{% static 'image/tr.jpg' %}" width="250"
+                                    style="border-radius: 10px;"></div>
+                            <div class="card-text card3">
+                                <h2>Trent Bolt </h2>
+                                <p>Economy : <span><b>7.9</b></span></p>
+
+
+                            </div>
+                            <div class="card-stats card3" style="margin-top: -15px;">
+                                <div class="stat">
+                                    <div class="value">159</div>
+                                    <div class="type">Match</div>
+                                </div>
+                                <div class="stat border">
+                                    <div class="value">157</div>
+                                    <div class="type">Wickets</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="value">7</div>
+                                    <div class="type">4 +  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 cd1">
+                    <div class="box">
+                        <div class="content">
+                            <div class="card-imagea card3"><img src="{% static 'image/js.jpg' %}" width="200"
+                                    style="border-radius: 10px;"></div>
+
+                            <div class="card-text card3">
+                                <h2>Jasprit Bhumrah </h2>
+                                <p>Economy : <span><b>6.29</b></span></p>
+
+                            </div>
+                            <div class="card-stats card3">
+                                <div class="stat">
+                                    <div class="value">159</div>
+                                    <div class="type">Match</div>
+                                </div>
+                                <div class="stat border">
+                                    <div class="value">198</div>
+                                    <div class="type">Wickets</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="value">9</div>
+                                    <div class="type">4 +  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="box">
+                        <div class="content">
+                            <div class="card-image card3"><img src="{% static 'image/ha.jpg' %}" width="250"
+                                    style="border-radius: 10px;"></div>
+
+                            <div class="card-text card3">
+                                <h2>Harbhjan Singh </h2>
+                                <p>Economy : <span><b>8.91</b></span></p>
+
+                            </div>
+                            <div class="card-stats card3" style="margin-top: -15px;">
+                                <div class="stat">
+                                    <div class="value">159</div>
+                                    <div class="type">Match</div>
+                                </div>
+                                <div class="stat border">
+                                    <div class="value">132</div>
+                                    <div class="type">Wickets</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="value">6</div>
+                                    <div class="type">4 +  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+    </div>
+    <!----   ------->
+    <div class=" bd">
+       <br><br> <h1 data-aos="fade-right"
+            style="text-align: center;font-size: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            MI Players</h1><br><br>
+    </div>
+    <div class="bdy">
+      
+       
+            
+        <div>
+          <section class="sec" data-aos="fade-down">
+              
+            <div class="swiper mySwiper container">
+              <div class="swiper-wrapper content">
+                <div class="swiper-slide cardslide">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="{% static 'image/qn.jpg' %}" alt="">
+                    </div>
+                    <div class="media-icons">
+                      <h1 style="color: whitesmoke;">1</h1>
+                      
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Quinton de Kock</span>
+                      <span class="profession">Role : <b> Batsman</b></span><br>
+                      <span class="profession"><b> South Africa</b></span>
+                    </div>
+        
+                    
+        
+                    <div class="button">
+                      
+                      <button  class="hireMe"><a href="/qui" class="kn">Know More</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/rh.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">2</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Rohit Sharma</span>
+                        <span class="profession">Role : <b> Batsman</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/roh" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/is.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">3</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Ishan Kishan</span>
+                        <span class="profession">Role : <b> Batsman</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/ish" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/su.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">4</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">SuryaKumar yadav</span>
+                        <span class="profession">Role : <b> Batsman</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/sury" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="{% static 'image/sar.jpg' %}" alt="">
+                    </div>
+                    <div class="media-icons">
+                      <h1 style="color: whitesmoke;">5</h1>
+                      
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Saurabh tiwari</span>
+                      <span class="profession">Role : <b> Batsman</b></span><br>
+                      <span class="profession"><b> Indian</b></span>
+                    </div>
+        
+                    
+        
+                    <div class="button">
+                      
+                      <button  class="hireMe"><a href="/sau" class="kn">Know More</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/sac.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">6</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Sachin Tendulkar</span>
+                        <span class="profession">Role : <b> All Rounder</b></span><br>
+                        <span class="profession"><b> England</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/sac" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/ad.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">7</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Aditya Tare</span>
+                        <span class="profession">Role : <b> Batsman</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/adi" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/ki.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">8</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Kieron Pollard</span>
+                        <span class="profession">Role : <b> All  Rounder</b></span><br>
+                        <span class="profession"><b> West Indies</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/kie" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/hr.jfif' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">9</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Hardik Pandya</span>
+                        <span class="profession">Role : <b> All Rounder</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/har" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/kur.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">10</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Kurnal Pandya</span>
+                        <span class="profession">Role : <b> All Rounder</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/kur" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/rah.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">11</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Rahul Chahar</span>
+                        <span class="profession">Role : <b> Bowler</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/rah" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/jam.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">12</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">James Neesham</span>
+                        <span class="profession">Role : <b> All Rounder</b></span><br>
+                        <span class="profession"><b> New Zealand</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/jam" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/js.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">13</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Jasprit Bhumrah</span>
+                        <span class="profession">Role : <b> Bowler</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/jas" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/jay.jfif' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">14</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">jayant yadav</span>
+                        <span class="profession">Role : <b> Bowler</b></span><br>
+                        <span class="profession"><b> Indian</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/jay" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cardslide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="{% static 'image/tr.jpg' %}" alt="">
+                      </div>
+                      <div class="media-icons">
+                        <h1 style="color: whitesmoke;">15</h1>
+                        
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Trent Bolt</span>
+                        <span class="profession">Role : <b> Bowler</b></span><br>
+                        <span class="profession"><b> NewZealand</b></span>
+                      </div>
+          
+                      
+          
+                      <div class="button">
+                        
+                        <button  class="hireMe"><a href="/tre" class="kn">Know More</a></button>
+                      </div>
+                    </div>
+                  </div>
+        
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+          </section>
+        </div>
+        </div>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+    
+            var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  slidesPerGroup: 3,
+                  loop: true,
+                  loopFillGroupWithBlank: true,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                });
+            
+            
+            </script>
+        
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bd{
+    background: linear-gradient(45deg, #cfbada, #e7c479);
+    margin-bottom: -50px;
+
+}
+.bdy{
+    
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #cfbada, #e7c479);
+}
+.bdy .sec .kn{
+    color: white;
+}
+.bdy .sec .kn:hover{
+    
+    text-decoration: none;
+}
+
+.sec{
+  position: relative;  
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper{
+  width: 950px;
+}
+
+.cardslide{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardslide::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #FF676D;
+  border-radius: 20px 20px 0 0;
+}
+
+.cardslide .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.sec .cardslide .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+}
+
+.sec .cardslide .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.cardslide .media-icons{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardslide .media-icons i{
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.sec .cardslide:hover {
+            transform: scale(0.9);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+
+.cardslide .media-icons i:hover{
+  opacity: 1;
+}
+
+.cardslide .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: ;
+} 
+
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.cardslide .rating{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.cardslide .rating i{
+  font-size: 18px;
+  margin: 0 2px;
+  color: #FF676D;
+}
+
+.cardslide .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.cardslide .button button{
+  background: #FF676D;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #b2cc1c;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #FF676D;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #FF676D;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #FF676D;
+}
+.credit a{
+  text-decoration: none;
+  color: #FF676D;
+  font-weight: 800;
+}
+.credit {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+       <!--------------------------------------------------------------------------------------------    ---> 
+       .mtwo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: whitesmoke;
+        }
+
+        .main1 {
+          background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/static/image/back1.jpg');
+          background-repeat: no-repeat;
+
+
+        }
+
+        .cr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            padding: 40px 0px;
+        }
+
+        .cr .card1 {
+            position: relative;
+            min-width: 320px;
+            height: 440px;
+            box-shadow: inset 5px 5px 5px rgb(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgb(255, 255, 255, 0.5),
+                5px 5px 5px rgb(0, 0, 0, 0.05),
+                -5px -5px 5px rgb(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 30px;
+        }
+
+        .cr .card1 .box {
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: #ebf5fc;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cr .card1:hover .box {
+            transform: translateY(-50px);
+            box-shadow: 0 10px 40px rgba(18, 124, 92, 0.2);
+            background: linear-gradient(45deg, #cfbada, #e7c479);
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .cr .card1 .box .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cr .card1 .box .content h2 {
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .cd1 {
+            transform: scale(1.15);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+        }
+
+
+        .body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .main {
+            background-color: rgb(243, 233, 220);
+
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 210px 210px 80px;
+            grid-template-areas: "image""text""stats";
+
+            border-radius: 18px;
+            background: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+            font-family: roboto;
+            text-align: center;
+
+
+            transition: 0.5s ease;
+            cursor: pointer;
+            margin: 30px;
+        }
+
+        .card-image {
+            grid-area: image;
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/static/image/is.jpg');
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-size: cover;
+        }
+
+        .card-text {
+            grid-area: text;
+            margin: 25px;
+        }
+
+        .card-text .date {
+            color: rgb(255, 7, 110);
+            font-size: 13px;
+        }
+
+        .card-text p {
+            color: grey;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .card-text h2 {
+            margin-top: 0px;
+            font-size: 28px;
+        }
+
+        .card-stats {
+            grid-area: stats;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background: rgb(255, 7, 110);
+        }
+
+        .card-stats .stat {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .card-stats .border {
+            border-left: 1px solid rgb(172, 26, 87);
+            border-right: 1px solid rgb(172, 26, 87);
+        }
+
+        .card-stats .value {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .card-stats .value sup {
+            font-size: 12px;
+        }
+
+        .card-stats .type {
+            font-size: 11px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .cd {
+            transform: scale(1.15);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+        }
+        .card:hover  {
+            transform: translateY(-50px);
+            box-shadow: 0 10px 40px rgba(18, 124, 92, 0.2);
+            background: linear-gradient(45deg, #cfbada, #e7c479);
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+
+        /*card2*/
+        .card-image.card2 {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/static/image/rh.jpg');
+            background-size: cover;
+        }
+
+        .card-text.card2 .date {
+            color: rgb(255, 77, 7);
+        }
+
+        .card-stats.card2 .border {
+            border-left: 1px solid rgb(185, 67, 20);
+            border-right: 1px solid rgb(185, 67, 20);
+        }
+
+        .card-stats.card2 {
+            background: rgb(255, 77, 7);
+        }
+
+        /*card3*/
+        .card-image.card3 {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/static/image/hr.jfif');
+            background-size: cover;
+        }
+
+        .card-text.card3 .date {
+            color: rgb(0, 189, 63);
+        }
+
+        .card-stats.card3 .border {
+            border-left: 1px solid rgb(14, 122, 50);
+            border-right: 1px solid rgb(14, 122, 50);
+        }
+
+        .card-stats.card3 {
+            background: rgb(0, 189, 63);
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    {%endblock%}
